@@ -3,84 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jineen Hourani — Portfolio</title>
+    <title>Jineen Hourani | Portfolio</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9fdfc; /* Mint Green  */
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ffe4e1; /* Soft Pink  */
-            padding: 2rem;
-            text-align: center;
-            border-bottom: 3px solid #e0f2f1;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        h1 { color: #d87093; margin: 0; } /* Pale Violet Red */
-        h2 { color: #4db6ac; border-bottom: 2px solid #ffe4e1; padding-bottom: 5px; }
-        .project-card {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border-left: 5px solid #ffe4e1;
-        }
-        .tag {
-            display: inline-block;
-            background: #e0f2f1;
-            color: #00796b;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-right: 5px;
-        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f7fafc; color: #2d3748; margin: 0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #ffe4e1 0%, #e0f2f1 100%); padding: 3rem 1rem; text-align: center; border-bottom: 5px solid #d87093; }
+        h1 { color: #d87093; margin: 0; font-size: 2.5rem; }
+        .subtitle { font-size: 1.2rem; color: #4a5568; font-weight: 300; margin-top: 10px; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+        h2 { color: #4db6ac; border-bottom: 2px solid #ffe4e1; padding-bottom: 8px; margin-top: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 1rem; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #ffe4e1; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .tag { display: inline-block; background: #e0f2f1; color: #00796b; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; margin: 3px; font-weight: bold; }
+        .education-item { background: #fffafb; padding: 15px; border-radius: 8px; border-left: 4px solid #d87093; margin-bottom: 15px; }
         a { color: #d87093; text-decoration: none; font-weight: bold; }
-        a:hover { text-underline-offset: 3px; text-decoration: underline; }
+        .contact-bar { text-align: center; padding: 2rem; background: #edf2f7; margin-top: 3rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Jineen Hourani</h1>
-    <p>Intelligent Systems Engineering Graduate | AI & Data Science Trainee</p>
+    <div class="subtitle">Intelligent Systems Engineering Graduate | AI & Machine Learning Engineering Trainee</div>
+    <p>Building end-to-end AI systems, from data pipelines to deep learning models.</p>
 </header>
 
 <div class="container">
+    
     <h2>About Me</h2>
-    <p>I am currently building practical skills in AI and data engineering through the AI.SPIRE program. I focus on working with data pipelines, SQL analytics, and machine learning models.</p>
+    <p>Intelligent Systems Engineering graduate with a focus on creating robust data solutions. Currently an AI trainee at AI.SPIRE, where I develop scalable ETL pipelines, SQL analytics, and predictive ML models. I thrive on understanding the "why" behind the code, ensuring line-by-line accuracy in every project.</p>
+
+    <h2>Education & Core Knowledge</h2>
+    <div class="education-item">
+        <strong>B.Sc. in Intelligent Systems Engineering</strong><br>
+        Specialized in: Computer Vision, Embedded Systems (Arduino/Microcontrollers), Fuzzy Logic, and Control Systems.
+    </div>
 
     <h2>Projects</h2>
-    
-    <div class="project-card">
-        <h3>Foundations: Python Environment</h3>
-        <p>Built a reproducible Python development environment with automated setup and Git workflow.</p>
-        <p>
-            <span class="tag">Python</span><span class="tag">Git</span><span class="tag">Bash</span>
-        </p>
-        <a href="https://github.com/LevelUp-Applied-AI/m1-l1-git-workflows-Jineen-Hourani" target="_blank">View Repo →</a>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Foundations & SQL Analytics</h3>
+            <p>Developed complex SQL query suites for tech solutions and performed database optimization using indexing and EXPLAIN ANALYZE.</p>
+            <div>
+                <span class="tag">PostgreSQL</span><span class="tag">SQL Optimization</span><span class="tag">Git</span>
+            </div>
+            <br><a href="https://github.com/Jineen-Hourani">View Projects →</a>
+        </div>
+
+        <div class="card">
+            <h3>ETL Pipelines & Dashboards</h3>
+            <p>Built an automated ETL pipeline for "Amman Digital Market" to track revenue and order volume with statistical validation (ANOVA).</p>
+            <div>
+                <span class="tag">Python</span><span class="tag">ETL Design</span><span class="tag">Data Analysis</span>
+            </div>
+            <br><a href="https://github.com/Jineen-Hourani">View Pipeline →</a>
+        </div>
+
+        <div class="card">
+            <h3>ML & Deep Learning</h3>
+            <p>Implemented a Housing Price Prediction model using PyTorch and developed a Telecom Churn Model CLI for comparing ML algorithms.</p>
+            <div>
+                <span class="tag">PyTorch</span><span class="tag">Scikit-Learn</span><span class="tag">MLOps</span>
+            </div>
+            <br><a href="https://github.com/Jineen-Hourani">View ML Models →</a>
+        </div>
+        
+        <div class="card" style="opacity: 0.7;">
+            <h3>Retrieval & Knowledge Graphs</h3>
+            <p>Upcoming module focusing on RAG (Retrieval-Augmented Generation) and Knowledge Graph implementation.</p>
+            <span class="tag">Coming Soon</span>
+        </div>
     </div>
 
-    <div class="project-card">
-        <h3>ML & NLP: Housing Price Prediction</h3>
-        <p>Built a basic regression model using PyTorch to predict housing prices from structured data.</p>
-        <p>
-            <span class="tag">PyTorch</span><span class="tag">Data Preprocessing</span><span class="tag">Python</span>
-        </p>
-        <a href="https://github.com/LevelUp-Applied-AI/m2-i2-pytorch-Jineen-Hourani" target="_blank">View Repo →</a>
-    </div>
+    <h2>Technical Skills</h2>
+    <p>
+        <strong>Languages:</strong> Python, SQL, C++ (Arduino/Embedded).<br>
+        <strong>Tools:</strong> Docker, PostgreSQL, PyTorch, Pandas, Git/GitHub.
+    </p>
 
-    <h2>Contact</h2>
-    <p>📧 Email: [Your Email Here]</p>
-    <p>🔗 GitHub: <a href="https://github.com/Jineen-Hourani">github.com/Jineen-Hourani</a></p>
+</div>
+
+<div class="contact-bar">
+    <h2>Contact Me</h2>
+    <p>📍 Amman, Jordan | 📧 <a href="mailto:jineenhourani@gmail.com">jineenhourani@gmail.com</a></p>
+    <p>🔗 <a href="https://github.com/Jineen-Hourani">GitHub Profile</a> | <a href="https://jineen-hourani.github.io/">Live Portfolio</a></p>
 </div>
 
 </body>
