@@ -3,79 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jineen Hourani</title>
+    <title>Jineen Hourani — Portfolio</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fdfc; /* Mint Green فاتح جداً للخلفية */
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-        h1 { color: #222; border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
-        h2 { color: #0366d6; margin-top: 30px; }
-        h3 { color: #555; }
-        hr { border: none; border-top: 1px solid #e1e4e8; margin: 20px 0; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { padding-left: 20px; }
-        li { margin: 8px 0; }
-        .project-item { margin: 15px 0; }
-        .skills { font-size: 0.9em; color: #666; }
+        header {
+            background-color: #ffe4e1; /* Soft Pink للهيدر */
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #e0f2f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1 { color: #d87093; margin: 0; } /* Pale Violet Red */
+        h2 { color: #4db6ac; border-bottom: 2px solid #ffe4e1; padding-bottom: 5px; }
+        .project-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid #ffe4e1;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0f2f1;
+            color: #00796b;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+        a { color: #d87093; text-decoration: none; font-weight: bold; }
+        a:hover { text-underline-offset: 3px; text-decoration: underline; }
     </style>
 </head>
 <body>
+
+<header>
     <h1>Jineen Hourani</h1>
+    <p>Intelligent Systems Engineering Graduate | AI & Data Science Trainee</p>
+</header>
 
-    <h2>About</h2>
-    <p>I am an Intelligent Systems Engineering graduate currently building practical skills in AI and data engineering through the AI.SPIRE program. I focus on working with data pipelines, SQL analytics, and practical ML implementations.</p>
-
-    <hr>
+<div class="container">
+    <h2>About Me</h2>
+    <p>I am currently building practical skills in AI and data engineering through the AI.SPIRE program. I focus on working with data pipelines, SQL analytics, and machine learning models.</p>
 
     <h2>Projects</h2>
-
-    <h3>Foundations</h3>
-    <div class="project-item">
-        <strong>Python Environment & Workflow Setup</strong> — Built a reproducible Python development environment with automated setup, documentation, and Git workflow for collaborative use.
-        <ul>
-            <li>Repo: <a href="https://github.com/LevelUp-Applied-AI/m1-l1-git-workflows-Jineen-Hourani">m1-l1-git-workflows</a></li>
-            <li class="skills">Skills: Python, Git, Bash, Documentation</li>
-        </ul>
+    
+    <div class="project-card">
+        <h3>Foundations: Python Environment</h3>
+        <p>Built a reproducible Python development environment with automated setup and Git workflow.</p>
+        <p>
+            <span class="tag">Python</span><span class="tag">Git</span><span class="tag">Bash</span>
+        </p>
+        <a href="https://github.com/LevelUp-Applied-AI/m1-l1-git-workflows-Jineen-Hourani" target="_blank">View Repo →</a>
     </div>
 
-    <hr>
-
-    <h3>ML & NLP</h3>
-    <div class="project-item">
-        <strong>Housing Price Prediction Model</strong> — Built a basic regression model using PyTorch to predict housing prices from structured data.
-        <ul>
-            <li>Repo: <a href="https://github.com/LevelUp-Applied-AI/m2-i2-pytorch-Jineen-Hourani">m2-i2-pytorch</a></li>
-            <li class="skills">Skills: Python, PyTorch, Data Preprocessing</li>
-        </ul>
+    <div class="project-card">
+        <h3>ML & NLP: Housing Price Prediction</h3>
+        <p>Built a basic regression model using PyTorch to predict housing prices from structured data.</p>
+        <p>
+            <span class="tag">PyTorch</span><span class="tag">Data Preprocessing</span><span class="tag">Python</span>
+        </p>
+        <a href="https://github.com/LevelUp-Applied-AI/m2-i2-pytorch-Jineen-Hourani" target="_blank">View Repo →</a>
     </div>
-
-    <hr>
-
-    <h3>Retrieval & Knowledge Graphs</h3>
-    <p>Coming soon</p>
-
-    <hr>
-
-    <h3>Deployment</h3>
-    <p>Coming soon</p>
-
-    <hr>
-
-    <h3>Capstone</h3>
-    <p>Coming soon</p>
-
-    <hr>
 
     <h2>Contact</h2>
-    <ul>
-        <li>GitHub: <a href="https://github.com/Jineen-Hourani">Jineen-Hourani</a></li>
-    </ul>
+    <p>📧 Email: [Your Email Here]</p>
+    <p>🔗 GitHub: <a href="https://github.com/Jineen-Hourani">github.com/Jineen-Hourani</a></p>
+</div>
+
 </body>
 </html>
