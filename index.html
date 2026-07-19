@@ -1,113 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jineen Hourani | Intelligent Systems Engineer</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #fcfdfd; color: #2d3748; margin: 0; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #ffe4e1 0%, #e0f2f1 100%); padding: 4rem 1rem; text-align: center; border-bottom: 5px solid #d87093; }
-        h1 { color: #d87093; margin: 0; font-size: 2.8rem; letter-spacing: 1px; }
-        .subtitle { font-size: 1.3rem; color: #4a5568; font-weight: 400; margin-top: 10px; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
-        h2 { color: #4db6ac; border-bottom: 2px solid #ffe4e1; padding-bottom: 8px; margin-top: 2.5rem; font-size: 1.8rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 1.5rem; }
-        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 15px rgba(0,0,0,0.03); border-top: 5px solid #ffe4e1; transition: 0.3s; }
-        .card:hover { transform: translateY(-8px); box-shadow: 0 15px 20px rgba(0,0,0,0.07); }
-        .tag { display: inline-block; background: #e0f2f1; color: #00796b; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin: 4px; font-weight: 600; }
-        .edu-section { background: #fffafb; padding: 25px; border-radius: 12px; border-left: 6px solid #d87093; margin-top: 1rem; }
-        .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem; margin-top: 10px; }
-        .skill-group { margin-bottom: 15px; }
-        .skill-title { font-weight: bold; color: #d87093; display: block; margin-bottom: 5px; }
-        a { color: #d87093; text-decoration: none; font-weight: bold; }
-        .contact-bar { text-align: center; padding: 3rem; background: #f1f5f9; margin-top: 4rem; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jineen Hourani — AI Systems Engineer focused on NLP, RAG, knowledge graphs, machine learning, and applied AI systems.">
+  <title>Jineen Hourani | AI Systems Engineer</title>
+  <style>
+    :root{--navy:#0d315a;--deep:#071f3d;--blue:#277ca6;--sky:#dceef6;--aqua:#78c7d3;--rose:#d98a9a;--blush:#f3dce3;--paper:#fbfcfd;--ink:#152638;--muted:#5f7182;--line:#d8e3eb;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}main{overflow:hidden}.wrap{max-width:1180px;margin:auto;padding-left:28px;padding-right:28px}
+    nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:18px 28px;background:rgba(251,252,253,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{font-size:1.4rem;font-weight:850;letter-spacing:-.04em;color:var(--navy)}.brand span{color:var(--rose)}.navlinks{display:flex;gap:28px;align-items:center;font-size:.92rem;font-weight:650}.navlinks a:hover{color:var(--blue)}.navlinks .navcta{padding:9px 18px;border-radius:999px;background:var(--navy);color:white}
+    .hero{position:relative;min-height:720px;display:grid;grid-template-columns:1.16fr .84fr;align-items:center;gap:50px;padding-top:80px;padding-bottom:90px}.hero:before{content:"";position:absolute;z-index:-1;width:520px;height:520px;right:-180px;top:50px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--blush),transparent 62%);opacity:.8}.kicker,.label{color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.18em;margin:0 0 16px}.hero h1{font-size:clamp(3.4rem,6vw,5.85rem);line-height:.98;letter-spacing:-.055em;color:var(--deep);max-width:770px;margin:0;font-weight:780}.hero h1 em{display:block;color:var(--blue);font-style:normal}.lead{max-width:690px;font-size:1.16rem;color:var(--muted);margin:28px 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:11px 22px;border-radius:999px;font-weight:750;transition:.2s}.button:hover{transform:translateY(-2px)}.primary{background:var(--navy);color:white;box-shadow:0 12px 28px rgba(13,49,90,.18)}.secondary{border:1px solid var(--line);background:rgba(255,255,255,.8);color:var(--navy)}.proof{display:flex;margin-top:46px}.proof div{display:grid;padding:0 28px;border-left:1px solid var(--line)}.proof div:first-child{padding-left:0;border:0}.proof strong{font-size:1.65rem;color:var(--navy);line-height:1}.proof span{margin-top:6px;color:var(--muted);font-size:.8rem}
+    .portrait-wrap{position:relative;min-height:520px;display:grid;place-items:center}.portrait{position:relative;z-index:2;width:min(350px,74vw);aspect-ratio:1;padding:12px;border-radius:50%;background:linear-gradient(145deg,#fff 30%,var(--sky));box-shadow:0 30px 80px rgba(13,49,90,.18)}.portrait img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 26%;display:block}.orbit{position:absolute;border-radius:50%;border:1px solid var(--aqua);opacity:.55;width:430px;height:430px}.orbit.two{width:500px;height:500px;border-color:var(--rose);opacity:.28}.status{position:absolute;z-index:3;bottom:34px;right:0;padding:13px 16px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 40px rgba(13,49,90,.15);font-size:.84rem;font-weight:650;color:var(--navy)}.status:before{content:"";display:inline-block;width:9px;height:9px;margin-right:10px;border-radius:50%;background:#25a46f;box-shadow:0 0 0 5px #dff5eb}
+    section{padding-top:100px;padding-bottom:100px}.intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;border-top:1px solid var(--line)}h2{color:var(--deep);margin:0;letter-spacing:-.035em;line-height:1.08;font-size:clamp(2.2rem,4vw,3.4rem)}.intro>p,.heading>p{color:var(--muted);font-size:1.08rem;margin:0}.heading{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-bottom:38px}.heading>p{max-width:390px}
+    .featured{display:grid;grid-template-columns:1fr 1fr;gap:24px}.feature{position:relative;overflow:hidden;padding:36px;min-height:570px;border-radius:26px;display:flex;flex-direction:column;border:1px solid var(--line);box-shadow:0 20px 55px rgba(13,49,90,.08)}.feature.blue{background:linear-gradient(150deg,#f7fbfd,#e6f3f7)}.feature.rose{background:linear-gradient(150deg,#fffafd,#f4e3e8)}.eyebrow{font-size:.72rem;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:0 0 10px}.feature h3{color:var(--deep);font-size:2rem;letter-spacing:-.03em;margin:0 0 18px}.contribution{padding:18px 0;border-top:1px solid rgba(13,49,90,.12);border-bottom:1px solid rgba(13,49,90,.12)}.metrics,.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.metrics span,.tags span,.working span{color:var(--navy);background:white;border-radius:10px;padding:8px 10px;font-size:.79rem;font-weight:800;border:1px solid rgba(13,49,90,.1)}.tags span,.working span{border-radius:999px;padding:5px 10px;font-size:.74rem}.cardlink{margin-top:auto;padding-top:24px;font-weight:800;color:var(--navy)}.morehead{display:flex;justify-content:space-between;align-items:baseline;margin:70px 0 22px}.morehead h3{font-size:1.55rem;color:var(--navy);margin:0}.morehead a{font-size:.9rem;font-weight:750;color:var(--blue)}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{position:relative;padding:28px;border:1px solid var(--line);background:white;border-radius:18px;min-height:245px;transition:.2s}.project:hover{transform:translateY(-4px);border-color:var(--aqua);box-shadow:0 18px 45px rgba(13,49,90,.08)}.number{font-size:.72rem;color:var(--rose);font-weight:800}.project h4{color:var(--navy);font-size:1.25rem;margin:12px 0}.project p{color:var(--muted)}.project small{color:var(--blue);font-weight:700}
+    .skills{max-width:none;background:var(--deep);color:white;padding-left:max(28px,calc((100vw - 1124px)/2));padding-right:max(28px,calc((100vw - 1124px)/2))}.skills h2{color:white}.skills .heading>p{color:#b9cada}.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{padding:26px;border-radius:17px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}.skill h3{color:var(--aqua);font-size:1rem;margin:0 0 8px}.skill p{margin:0;color:#d7e1ea}.working{margin-top:28px;display:grid;grid-template-columns:170px 1fr;gap:24px}.working strong{color:var(--blush)}.working div{display:flex;flex-wrap:wrap;gap:8px}.working span{color:#dce8ef;border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.05)}
+    .timeline{border-top:1px solid var(--line)}.timeline article{display:grid;grid-template-columns:110px 1fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}.timeline article>span{color:var(--rose);font-weight:850}.timeline h3{margin:0 0 7px;color:var(--navy)}.timeline p{margin:0;color:var(--muted)}.contact{margin-bottom:80px;border-radius:34px;background:linear-gradient(125deg,var(--sky),#f7e8ed 80%);text-align:center}.contact h2{max-width:850px;margin:auto}.contact>p:not(.label){max-width:680px;margin:22px auto 28px;color:var(--muted)}.contact .actions{justify-content:center}footer{max-width:1180px;margin:auto;padding:26px 28px 38px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:.83rem}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:60px}.lead{margin-left:auto;margin-right:auto}.actions,.proof{justify-content:center}.portrait-wrap{order:-1;min-height:390px}.portrait{width:280px}.orbit{width:340px;height:340px}.orbit.two{width:390px;height:390px}.status{right:12%;bottom:8px}.intro,.featured{grid-template-columns:1fr;gap:28px}.heading{align-items:start;flex-direction:column;gap:18px}}
+    @media(max-width:650px){nav{padding:14px 18px}.navlinks a:not(.navcta){display:none}.hero{min-height:auto;padding:42px 20px 72px}.hero h1{font-size:3.15rem}.portrait-wrap{min-height:325px}.portrait{width:230px}.orbit{width:280px;height:280px}.orbit.two{width:315px;height:315px}.status{position:relative;right:auto;bottom:auto;margin-top:-20px}.proof{flex-direction:column;gap:14px;align-items:center}.proof div,.proof div:first-child{width:210px;padding:0 0 14px;border-left:0;border-bottom:1px solid var(--line)}section{padding-top:72px;padding-bottom:72px}.wrap{padding-left:20px;padding-right:20px}.feature{min-height:auto;padding:26px}.projects,.skillgrid{grid-template-columns:1fr}.morehead{align-items:start;flex-direction:column;gap:12px}.working{grid-template-columns:1fr;gap:12px}.timeline article{grid-template-columns:1fr;gap:8px}.contact{border-radius:0;margin-bottom:28px}footer{flex-direction:column;gap:8px;padding-left:20px;padding-right:20px}}
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Jineen Hourani</h1>
-    <div class="subtitle">Intelligent Systems Engineer | AI & ML Trainee</div>
-    <p style="max-width: 700px; margin: 15px auto;">Bridging the gap between Academic Engineering principles and Modern AI implementation.</p>
-</header>
-
-<div class="container">
-    
-    <h2>Professional Profile</h2>
-    <p>A graduate in <strong>Intelligent Systems Engineering</strong> with a deep-rooted understanding of the mathematical and algorithmic foundations of Artificial Intelligence. My background spans from low-level embedded systems and control theory to high-level machine learning and data mining. Currently, I am refining these skills into production-ready expertise through the AI.SPIRE program, focusing on end-to-end data pipelines and scalable AI solutions.</p>
-
-    <h2>Engineering & Academic Foundation</h2>
-    <div class="edu-section">
-        <strong>B.Sc. in Intelligent Systems Engineering</strong>
-        <p>My academic journey provided a comprehensive core in intelligent technologies and engineering design:</p>
-        <div class="edu-grid">
-            <div>
-                <span class="skill-title">AI & Data Science:</span>
-                • Neural Networks & Deep Learning<br>
-                • Machine Learning & Data Mining<br>
-                • AI Searching Algorithms<br>
-                • SQL Databases
-            </div>
-            <div>
-                <span class="skill-title">Systems & Control:</span>
-                • Computer Vision & Image Processing<br>
-                • Fuzzy Logic & Control Systems<br>
-                • Embedded Systems (Arduino/MCUs)<br>
-                • Engineering Design (Matlab/AutoCAD)
-            </div>
-        </div>
-    </div>
-
-    <h2>Current Applied Projects (AI.SPIRE)</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>SQL & Data Optimization</h3>
-            <p>Advanced SQL analytics and database performance tuning. Implemented indexing strategies and execution plan analysis.</p>
-            <div><span class="tag">PostgreSQL</span><span class="tag">SQL Analytics</span><span class="tag">Optimization</span></div>
-            <br><a href="https://github.com/Jineen-Hourani">View Lab Repo →</a>
-        </div>
-
-        <div class="card">
-            <h3>Automated ETL Pipelines</h3>
-            <p>Developing robust ETL workflows for regional market data, incorporating statistical validation (ANOVA) and data cleaning pipelines.</p>
-            <div><span class="tag">Python</span><span class="tag">ETL</span><span class="tag">Data Engineering</span></div>
-            <br><a href="https://github.com/Jineen-Hourani">Explore Pipeline →</a>
-        </div>
-
-        <div class="card">
-            <h3>Machine Learning & PyTorch</h3>
-            <p>Building predictive models using PyTorch and Scikit-learn, from tabular housing data to churn prediction CLI tools.</p>
-            <div><span class="tag">PyTorch</span><span class="tag">MLOps</span><span class="tag">Regression</span></div>
-            <br><a href="https://github.com/Jineen-Hourani">View Models →</a>
-        </div>
-    </div>
-
-    <h2>Technical Toolbox</h2>
-    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-        <div class="skill-group">
-            <span class="skill-title">Programming</span>
-            Python, SQL, C++, Matlab
-        </div>
-        <div class="skill-group">
-            <span class="skill-title">Frameworks</span>
-            PyTorch, Pandas, Scikit-learn
-        </div>
-        <div class="skill-group">
-            <span class="skill-title">Tools & Engineering</span>
-            Docker, Git, PostgreSQL, AutoCAD
-        </div>
-    </div>
-
-</div>
-
-<div class="contact-bar">
-    <h2>Let's Connect</h2>
-    <p>📍 Amman, Jordan | 📧 <a href="mailto:jineenhourani@gmail.com">jineenhourani@gmail.com</a></p>
-    <p>
-        <a href="https://github.com/Jineen-Hourani">GitHub Profile</a> | 
-        <a href="https://jineen-hourani.github.io/">Portfolio Home</a>
-    </p>
-</div>
-
+<main>
+  <nav aria-label="Primary navigation"><a class="brand" href="#top">JH<span>.</span></a><div class="navlinks"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a class="navcta" href="#contact">Contact</a></div></nav>
+  <section class="hero wrap" id="top"><div><p class="kicker">AI SYSTEMS · NLP · RAG · KNOWLEDGE GRAPHS</p><h1>Building AI systems that connect <em>data, intelligence, and action.</em></h1><p class="lead">I'm Jineen Hourani, an Intelligent Systems Engineering graduate in Amman. I build practical AI solutions across NLP, retrieval, knowledge graphs, machine learning, and embedded systems.</p><div class="actions"><a class="button primary" href="#work">View selected work</a><a class="button secondary" href="https://github.com/Jineen-Hourani" target="_blank" rel="noreferrer">GitHub profile ↗</a></div><div class="proof"><div><strong>2</strong><span>flagship AI systems</span></div><div><strong>98%</strong><span>CV model precision</span></div><div><strong>100%</strong><span>Top-3 RAG retrieval</span></div></div></div><div class="portrait-wrap"><div class="orbit"></div><div class="orbit two"></div><div class="portrait"><img src="jineen-hourani.png" alt="Jineen Hourani"></div><div class="status">Open to junior AI &amp; ML opportunities</div></div></section>
+  <section class="intro wrap"><div><p class="label">ABOUT</p><h2>I turn multidisciplinary foundations into working AI applications.</h2></div><p>My strongest work sits at the intersection of NLP/RAG, knowledge systems, and applied AI engineering. I enjoy preparing trustworthy data, connecting retrieval and graph components, evaluating model behavior, and documenting how the pieces work together. My computer-vision and embedded background adds a systems perspective: the model is only valuable when it works inside a complete solution.</p></section>
+  <section class="wrap" id="work"><div class="heading"><div><p class="label">SELECTED WORK</p><h2>Evidence over buzzwords.</h2></div><p>Two systems that best represent how I think, collaborate, and build.</p></div><div class="featured">
+    <article class="feature blue"><p class="eyebrow">AI.SPIRE Capstone</p><h3>FusionMind</h3><p>Agentic AI customer support for e-commerce, combining hybrid RAG, a Neo4j knowledge graph, deterministic business rules, and controlled actions.</p><p class="contribution"><strong>My contribution:</strong> As part of the capstone team, I led data preparation, Neo4j graph ingestion, and RAG document ingestion; co-designed graph-agent integration; and contributed to the NLP processing layer.</p><div class="metrics"><span>100% intent macro-F1</span><span>100% Top-3 retrieval</span><span>0.83 MRR</span></div><div class="tags"><span>Python</span><span>RAG</span><span>Neo4j</span><span>Weaviate</span><span>NLP</span></div><a class="cardlink" href="https://github.com/capstone-group1-team3/main-repo" target="_blank" rel="noreferrer">Explore the capstone ↗</a></article>
+    <article class="feature rose"><p class="eyebrow">Graduation Project</p><h3>AI-Based Driver Alert System</h3><p>A five-member team project connecting computer vision with Arduino hardware to detect phone use and drowsiness and trigger real-time alerts.</p><p class="contribution"><strong>My contribution:</strong> Contributed to model development, evaluation, serial communication, and hardware-software integration for a safety-focused application.</p><div class="metrics"><span>~600 annotated images</span><span>98% precision</span><span>89% recall</span><span>73% mAP</span></div><div class="tags"><span>YOLOv8</span><span>Roboflow</span><span>Arduino</span><span>Embedded C/C++</span></div><a class="cardlink" href="#contact">Ask me about the project →</a></article>
+  </div><div class="morehead"><h3>More applied projects</h3><a href="https://github.com/Jineen-Hourani" target="_blank" rel="noreferrer">Browse all GitHub work ↗</a></div><div class="projects">
+    <a class="project" href="https://github.com/Jineen-Hourani/m8-i8-RAG-service-Jineen-Hourani/pull/1" target="_blank" rel="noreferrer"><span class="number">01</span><h4>Weaviate RAG Mini-Service</h4><p>Built a hybrid-retrieval RAG service with context-injected prompting and evaluated it on a 30-question benchmark.</p><small>Weaviate · BM25 + dense retrieval · FLAN-T5</small></a>
+    <a class="project" href="https://github.com/LevelUp-Applied-AI/m3-l3-sql-analytics-Jineen-Hourani/pull/1" target="_blank" rel="noreferrer"><span class="number">02</span><h4>SQL Analytics Pack</h4><p>Created reusable relational queries for KPI extraction, analytical joins, and streamlined reporting workflows.</p><small>SQL · PostgreSQL · Analytics</small></a>
+    <a class="project" href="https://github.com/LevelUp-Applied-AI/m4-i4-kpi-dashboard-Jineen-Hourani/pull/1" target="_blank" rel="noreferrer"><span class="number">03</span><h4>Data &amp; ML Pipeline</h4><p>Designed a modular Pandas ETL workflow and integrated a PyTorch neural network for real-estate price prediction.</p><small>Pandas · PyTorch · ETL</small></a>
+    <a class="project" href="https://github.com/LevelUp-Applied-AI/m5-i5b-model-comparison-Jineen-Hourani/pull/1" target="_blank" rel="noreferrer"><span class="number">04</span><h4>Churn Prediction Pipeline</h4><p>Built a repeatable train-evaluate workflow for churn risk, model comparison, and metric benchmarking.</p><small>scikit-learn · Evaluation · ML pipelines</small></a>
+  </div></section>
+  <section class="skills" id="skills"><div class="heading"><div><p class="label">TECHNICAL PROFILE</p><h2>Focused strengths, honest scope.</h2></div><p>Technologies I have used directly are separated from tools I can work with after a quick refresh.</p></div><div class="skillgrid"><div class="skill"><h3>Programming &amp; Data</h3><p>Python, SQL, Pandas, PostgreSQL, SQLite, data preparation, and ETL pipelines</p></div><div class="skill"><h3>Machine Learning &amp; NLP</h3><p>PyTorch, scikit-learn, Hugging Face Transformers, spaCy, CNNs, NLP pipelines, RAG, and model evaluation</p></div><div class="skill"><h3>Retrieval &amp; Knowledge</h3><p>Neo4j, Weaviate hybrid search, knowledge graphs, and RAG ingestion</p></div><div class="skill"><h3>Embedded Systems</h3><p>Arduino, Embedded C/C++, serial communication, and sensor integration</p></div></div><div class="working"><strong>Working knowledge</strong><div><span>BGE-M3 embeddings</span><span>FastAPI</span><span>REST APIs</span><span>Docker</span><span>JWT</span><span>YOLOv8</span><span>Roboflow</span><span>OpenCV</span><span>SAM</span><span>MediaPipe</span><span>Linux</span></div></div></section>
+  <section class="wrap" id="journey"><div class="heading"><div><p class="label">JOURNEY</p><h2>Engineering foundation. Applied AI direction.</h2></div></div><div class="timeline"><article><span>2026</span><div><h3>AI.SPIRE: Applied AI and ML Systems</h3><p>24-week applied program by LevelUp Economy &amp; Istidama Consulting, covering NLP, machine learning, RAG systems, knowledge graphs, APIs, and professional AI documentation.</p></div></article><article><span>2025</span><div><h3>B.Sc. Intelligent Systems Engineering</h3><p>Tafila Technical University · Multidisciplinary foundation across machine learning, computer vision, embedded systems, databases, and engineering design.</p></div></article><article><span>2024</span><div><h3>IT Technical Support Intern</h3><p>Orange Jordan · Supported corporate ticketing, VPN provisioning, system imaging, verified hardware erasure, data migration, and desktop infrastructure.</p></div></article></div></section>
+  <section class="contact wrap" id="contact"><p class="label">LET'S CONNECT</p><h2>Interested in practical AI systems and thoughtful teamwork?</h2><p>I'm open to junior AI, machine-learning, NLP/RAG, and AI-systems opportunities in Jordan or remote.</p><div class="actions"><a class="button primary" href="mailto:jineenhourani@gmail.com">Email me</a><a class="button secondary" href="https://www.linkedin.com/in/jineen-hourani-001216388/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button secondary" href="https://github.com/Jineen-Hourani" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+  <footer><span>© 2026 Jineen Hourani</span><span>Built around evidence, clarity, and continuous growth.</span></footer>
+</main>
 </body>
 </html>
